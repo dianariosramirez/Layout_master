@@ -1,0 +1,143 @@
+body {
+    font-family: 'Noto Sans Mono', monospace;
+    width: 100%;
+    min-height: 100vh;
+    margin: 2px;
+    padding: 0;
+}
+
+.zone {
+    padding:10px;
+    margin:1px;
+    cursor:pointer;
+    display:block;
+    color:rgb(11, 11, 11);
+    font-size:100%;
+    border:1px solid #bbb;
+    transition: all 0.3s linear;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 60px 300px 700px 60px;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px 5%;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.header .navigation {
+    list-style: none;
+}
+
+.header .navigation li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+li:hover {
+    transform: scale(1.1);
+}
+
+.navigation li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navigation li a:hover {
+    color:#537381;
+    box-shadow: white;
+}
+
+button {
+    font-family: 'Noto Sans Mono', monospace;;
+    margin-left: 20px;
+    font-weight: 700;
+    color:aliceblue;
+    background-color: #537381;
+    border-color:#537381;
+    border-radius: 10px;
+    padding: 5px 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+button:hover {
+    background-color: aliceblue;
+    color: #032536;
+    transform: scale(1.1);
+}
+
+.menu {
+    background-color: #032536;
+    border-radius: 5px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    transition: all 1.5s;
+}
+
+.menu:hover {
+    box-shadow:rgba(250, 248, 248, 0.8) 0px 5px 15px;
+    transform: scale(1.1);
+}
+
+.panel {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+}
+
+.cover {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.footer {
+    color: white;
+    font-style: italic;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5%;   
+}
+
+.red img {
+    transition: 1s;
+}
+
+.red img:hover {
+    transform: scale(1.1);
+}
+
+/*
+    BACKGROUND ZONES
+*/
+.zone:hover {
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+.header{
+    background: #113c51; 
+}
+
+.cover{
+    background: white; 
+}
+
+.footer{
+    background: #537381; 
+}
+
+.panel{
+    background: #27556c;
+}
